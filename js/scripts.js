@@ -1,7 +1,9 @@
-var height = parseInt(prompt("Please enter your height"));
-var weight = parseInt(prompt("Please enter your weight"));
-var heightFinal = height * height;
-var bmiCalculator = function(heightFinal, weight){
-  return weight / heightFinal;
+//BMI Calculator
+
+var height = parseFloat(prompt("Please enter your height in m"));
+var weight = parseInt(prompt("Please enter your weight in kg"));
+
+var bmi = function(weight, height){
+  return (weight / height)/height;
 }
-alert(bmiCalculator(heightFinal,weight))
+alert(bmi(weight,height))
